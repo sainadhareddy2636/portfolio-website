@@ -9,12 +9,7 @@ const projects = [
     stack: ["Node.js", "Express", "MongoDB", "Cloudinary"],
     live: "https://reca-21ve.onrender.com/reca",
     code: "https://github.com/sainadhareddy2636/RTP_RECA.git",
-  },
-  {
-    name: "Exam Hall Attendance System",
-    desc: "ML-based face recognition app to prevent impersonation in exams.",
-    stack: ["Flutter", "ML", "MongoDB", "MySQL"],
-  },
+  }
 ];
 
 export default function Projects() {
