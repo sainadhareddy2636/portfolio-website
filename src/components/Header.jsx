@@ -4,7 +4,8 @@ import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Header() {
   return (
     <header className="relative overflow-hidden bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      <div className="container relative py-28 grid md:grid-cols-2 items-center gap-12">
+      <div className="container relative py-28 px-8 md:px-16 grid md:grid-cols-2 items-center gap-12">
+
         {/* Left Side */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

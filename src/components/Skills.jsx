@@ -3,9 +3,9 @@ import SectionTitle from "./SectionTitle";
 
 const groups = [
   { title: "Languages", items: ["C", "Java", "Python", "Dart", "JavaScript", "SQL", "R"] },
-  { title: "Frameworks", items: ["React", "Node.js", "Express", "Bootstrap", "Flutter"] },
-  { title: "Databases/Cloud", items: ["MongoDB", "MySQL", "Cloudinary"] },
-  { title: "Tools", items: ["VS Code", "Git", "GitHub", "Jupyter", "Android Studio", "Jenkins", "Docker"] },
+  { title: "Frameworks", items: ["React", "Node.js", "Express","Tailwind", "Bootstrap", "Flutter"] },
+  { title: "Databases", items: ["MongoDB", "MySQL"] },
+  { title: "Tools", items: ["VS Code", "Git", "GitHub", "Jupyter Notebook", "Android Studio", "Jenkins", "Docker"] },
 ];
 
 export default function Skills() {
