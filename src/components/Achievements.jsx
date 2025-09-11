@@ -2,13 +2,19 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 
 const items = [
-  "🥈 Runner-Up • State Level Quiz Expo (Govt. of Telangana)",
+  "📊 Qualified GATE 2025 in both CS and DA — showcasing proficiency in Problem Solving, Machine Learning, Probability & Statistics, Databases, Data Structures, and Algorithms",
+  "🏆 Winner in 2 consecutive editions of QuiZone organised by the Siddartha Group of Institutions",
+  "🥈 Secured 2nd place in State-Level Quiz Expo, Government of Telangana (400+ participants)",
   "💡 Participated in Hackathons & Olympiads — Problem-solving & Innovation",
+  "💻 Solved 250+ Coding Questions on various competitive programming platforms"
 ];
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="section py-16 bg-gray-50 dark:bg-gray-900">
+    <section
+      id="achievements"
+      className="section py-16 bg-gray-50 dark:bg-gray-900"
+    >
       <SectionTitle>Achievements</SectionTitle>
 
       <div className="container mx-auto max-w-3xl mt-8 space-y-4">
