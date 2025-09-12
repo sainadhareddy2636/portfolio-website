@@ -6,9 +6,16 @@ const projects = [
   {
     name: "ReCa – Cart for Reusables",
     desc: "Campus marketplace for students to buy/sell reusable items. 100+ registrations, 50+ transactions.",
-    stack: ["Node.js", "Express", "MongoDB", "Cloudinary"],
+    stack: ["NodeJS", "Express", "MongoDB", "Cloudinary"],
     live: "https://reca-21ve.onrender.com/reca",
     code: "https://github.com/sainadhareddy2636/RTP_RECA.git",
+  },
+  {
+    name: "🎮 Multi-Game Hub",
+    desc: "A sleek web platform featuring fun logic and puzzle games like Sudoku, Memory Game , 2048, and more — all in one place.",
+    stack: ["ReactJS","NodeJS","ExpressJS","MongoDB","Material UI"],
+    // live: "https://reca-21ve.onrender.com/reca",
+    code: "https://github.com/sainadhareddy2636/multi-game-hub.git",
   }
 ];
 
