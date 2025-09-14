@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin, FaTrophy } from "react-icons/fa"; // <-- Added FaTrophy
 
 export default function Header() {
   return (
@@ -52,6 +52,16 @@ export default function Header() {
             >
               <FaLinkedin /> LinkedIn
             </a>
+
+            {/* New Unstop Button */}
+            <a
+              href="https://unstop.com/u/busisai7505"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 text-purple-700 dark:text-purple-400 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              <FaTrophy /> Unstop
+            </a>
           </div>
         </motion.div>
 
@@ -63,18 +73,13 @@ export default function Header() {
           className="flex justify-center"
         >
           <div className="relative w-48 md:w-64 group">
-            {/* Simple border */}
             <div className="absolute inset-0 rounded-3xl bg-gray-300 dark:bg-gray-700 p-1 -z-10" />
-
-            {/* Image container with professional hover */}
             <div className="w-full h-full rounded-3xl overflow-hidden relative shadow-2xl transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
               <img
                 src="/Sainadha_Reddy_Profile_photo.jpg"
                 alt="Busi Reddy"
                 className="w-full h-full object-cover rounded-3xl"
               />
-
-              {/* Subtle overlay */}
               <div className="absolute inset-0 bg-black/0 dark:bg-black/0 transition-colors duration-500 group-hover:bg-black/10 dark:group-hover:bg-black/20 rounded-3xl" />
             </div>
           </div>

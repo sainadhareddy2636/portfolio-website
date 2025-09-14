@@ -2,11 +2,12 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 
 const items = [
-  "📊 Qualified GATE 2025 in both CS and DA — showcasing proficiency in Problem Solving, Machine Learning, Probability & Statistics, Databases, Data Structures, and Algorithms",
-  "🏆 Winner in 2 consecutive editions of QuiZone organised by the Siddartha Group of Institutions",
-  "🥈 Secured 2nd place in State-Level Quiz Expo, Government of Telangana (400+ participants)",
-  "💡 Participated in Hackathons & Olympiads — Problem-solving & Innovation",
-  "💻 Solved 250+ Coding Questions on various competitive programming platforms"
+  "📊 Qualified GATE 2025 in both CS and DA — Demonstrated proficiency in Problem Solving, Machine Learning, Probability & Statistics, Databases, Data Structures, and Algorithms",
+  "🏆 Winner of 2 consecutive editions of QuiZone organized by the Siddartha Group of Institutions",
+  "🥈 Runner-up (2nd place) in the State-Level Maths Olympiad (2017) — Competed with 500+ students and received the award on National Mathematics Day (Ramanujan’s Birthday)",
+  "🥈 Secured 2nd place in the State-Level Quiz Expo organized by the Government of Telangana (400+ participants)",
+  "💡 Actively participated in Hackathons & Olympiads — Showcasing skills in problem-solving and innovation",
+  "💻 Solved 250+ coding problems on various competitive programming platforms"
 ];
 
 export default function Achievements() {
