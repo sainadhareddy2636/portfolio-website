@@ -10,13 +10,21 @@ const projects = [
     live: "https://reca-21ve.onrender.com/reca",
     code: "https://github.com/sainadhareddy2636/RTP_RECA.git",
   },
+    {
+    name: "Health-Insurance-Claim-Prediction",
+    desc: "Built a machine learning web application that predicts the expected health insurance claim amount for individuals based on personal attributes like age, BMI, smoking habits, and region.",
+    stack: ["Python"," Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"," Flask"," HTML"," CSS"],
+    live: "https://health-insurance-claimprediction.streamlit.app/",
+    code: "https://github.com/sainadhareddy2636/Health-Insurance-Claim-Prediction.git",
+  },
   {
     name: "🎮 Multi-Game Hub",
     desc: "A sleek web platform featuring fun logic and puzzle games like Sudoku, Memory Game , 2048, and more — all in one place.",
     stack: ["ReactJS","NodeJS","ExpressJS","MongoDB","Material UI"],
-    // live: "https://reca-21ve.onrender.com/reca",
+    live: "https://multigamehub.netlify.app/",
     code: "https://github.com/sainadhareddy2636/multi-game-hub.git",
   }
+
 ];
 
 export default function Projects() {
