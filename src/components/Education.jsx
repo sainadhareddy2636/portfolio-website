@@ -6,7 +6,7 @@ const education = [
   {
     degree: "B.Tech in Computer Science & Engineering",
     institution: "JNTUH-UCESTH, Hyderabad",
-    details: "CGPA: 9.09 | Relevant Courses: AI, ML, Data Structures, Software Engineering",
+    details: "CGPA: 9.13 | Relevant Courses: AI, ML, Data Structures, Software Engineering",
   },
   {
     degree: "Intermediate (12th)",

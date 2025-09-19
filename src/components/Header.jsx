@@ -28,7 +28,7 @@ export default function Header() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="/Sainadha_Reddy_22011A0515.pdf"
+              href="/SainadhaReddy_Resume.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-105 transition-all duration-300 shadow-lg"
             >
