@@ -7,7 +7,7 @@ const items = [
   "🥈 Runner-up (2nd place) in the State-Level Maths Olympiad (2017) — Competed with 500+ students and received the award on National Mathematics Day (Ramanujan’s Birthday)",
   "🥈 Secured 2nd place in the State-Level Quiz Expo organized by the Government of Telangana (400+ participants)",
   "💡 Actively participated in Hackathons & Olympiads — Showcasing skills in problem-solving and innovation",
-  "💻 Solved 250+ coding problems on various competitive programming platforms"
+  "💻 Solved 200+ coding problems on various competitive programming platforms"
 ];
 
 export default function Achievements() {
