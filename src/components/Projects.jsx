@@ -6,9 +6,16 @@ const projects = [
   {
     name: "ReCa – Cart for Reusables",
     desc: "Campus marketplace for students to buy/sell reusable items. 100+ registrations, 50+ transactions.",
-    stack: ["NodeJS", "Express", "MongoDB", "Cloudinary"],
+    stack: ["HTML","CSS","Bootstrap","JavaScript","NodeJS", "Express", "MongoDB", "Cloudinary"],
     live: "https://reca-21ve.onrender.com/reca",
     code: "https://github.com/sainadhareddy2636/RTP_RECA.git",
+  },
+  {
+    name: "AI-Note Maker",
+    desc: "Built an AI-powered web app that generates contextual notes and answers from uploaded PDF documents.",
+    stack: ["Next.js","Tailwind CSS","Convex","Google Generative AI"],
+    live: "https://ai-pdf-notes-taker.vercel.app/",
+    code: "https://github.com/sainadhareddy2636/AI-Note-Maker.git",
   },
     {
     name: "Health-Insurance-Claim-Prediction",
