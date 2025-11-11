@@ -10,11 +10,11 @@ export default function Contact() {
       <SectionTitle>Contact</SectionTitle>
 
       <div className="card bg-white dark:bg-gray-800 rounded-xl shadow-lg max-w-lg mx-auto p-8 text-center transition-all duration-300 hover:shadow-2xl">
-        <h4 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">
+        {/* <h4 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-100">
           Let’s Grow Together 🚀
-        </h4>
+        </h4> */}
         <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg sm:text-base leading-relaxed">
-          Open to internships and full-time roles. Reach out to collaborate!
+          Open to internships and full-time roles. 
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
