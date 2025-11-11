@@ -23,12 +23,12 @@ export default function Header() {
           </h1>
 
           <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-xl">
-            Full-Stack Developer • ML Enthusiast • CS Undergrad passionate about building impactful applications.
+            • CS Undergrad passionate about building impactful applications.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="/SainadhaReddy_Resume.pdf"
+              href="/BusiReddySainadhaReddy_22011A0515.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-105 transition-all duration-300 shadow-lg"
             >
