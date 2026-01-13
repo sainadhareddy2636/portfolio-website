@@ -17,6 +17,13 @@ const projects = [
     live: "https://ai-pdf-notes-taker.vercel.app/",
     code: "https://github.com/sainadhareddy2636/AI-Note-Maker.git",
   },
+  {
+    name: "Secure Video Streaming and Processing Platform with Real time Sensitivity Analysis",
+    desc: "Built a secure full-stack video platform with real-time upload tracking, rule-based sensitivity analysis, and protected video streaming.",
+    stack: ["Node.js","Express.js","MongoDB","React","Socket IO"],
+    live: "https://secure-video-processing-and-stream.vercel.app/",
+    code: "https://github.com/sainadhareddy2636/Secure_Video_Processing_and_Streaming_Platform_with_Real-Time_Sensitivity_Analysis.git",
+  },
     {
     name: "Health-Insurance-Claim-Prediction",
     desc: "Built a machine learning web application that predicts the expected health insurance claim amount for individuals based on personal attributes like age, BMI, smoking habits, and region.",
