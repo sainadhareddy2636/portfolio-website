@@ -4,56 +4,155 @@ import useDarkMode from "../hooks/useDarkMode";
 export default function Nav() {
   const [theme, setTheme] = useDarkMode();
 
-  return (
-    <nav className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-sm">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
-        <a href="#home" className="text-xl sm:text-2xl font-bold dark:text-white hover:text-yellow-400 transition-colors">
+  const links = [
+    "home",
+    "about",
+    "education",
+    "skills",
+    "projects",
+    "achievements",
+    ,
+    "contact",
+  ];
 
+  return (
+    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#050F24]/80 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+      <div className="max-w-7xl mx-auto h-14 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        
+        {/* Logo */}
+        <a
+          href="#home"
+          className="
+            text-xl
+            font-extrabold
+            bg-gradient-to-r
+            from-blue-500
+            to-purple-500
+            bg-clip-text
+            text-transparent
+            hover:scale-105
+            transition-transform
+            duration-300
+            whitespace-nowrap
+          "
+        >
+          Sainadha Reddy
         </a>
 
-        {/* Menu Links */}
-        <div className="hidden sm:flex items-center gap-6 text-sm font-bold dark:text-gray-200">
-  {["home", "about", "skills", "projects", "achievements", "contact"].map((section) => (
-    <a
-      key={section}
-      href={`#${section}`}
-      className="relative px-2 py-1 text-gray-700 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300 transition-colors
-                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-400 dark:after:bg-blue-300 after:transition-all after:duration-300 hover:after:w-full"
-    >
-      {section.charAt(0).toUpperCase() + section.slice(1)}
-    </a>
-  ))}
-</div>
+        {/* Navigation Links */}
+        <div className="hidden md:flex items-center gap-5 font-semibold">
+          {links.map((section) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              className="
+                relative
+                text-gray-700
+                dark:text-gray-300
+                hover:text-blue-500
+                dark:hover:text-blue-400
+                transition-colors
+                duration-300
 
-        {/* Socials & Theme Toggle */}
-        <div className="flex items-center gap-3">
-          {/* Dark Mode Toggle */}
-        <div className="relative group">
-          <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-full transition-all duration-300 
-                      bg-gray-200 dark:bg-gray-700 
-                      hover:bg-gray-300 dark:hover:bg-gray-600 
-                      text-gray-800 dark:text-yellow-400 
-                      shadow-md hover:shadow-lg"
-            aria-label="Toggle Theme"
-          >
-            {theme === "dark" ? <FaSun /> : <FaMoon />}
-          </button>
+                after:content-['']
+                after:absolute
+                after:left-0
+                after:-bottom-1
+                after:w-0
+                after:h-[3px]
+                after:rounded-full
+                after:bg-gradient-to-r
+                after:from-blue-500
+                after:to-purple-500
+                after:transition-all
+                after:duration-300
 
-          {/* Tooltip text below */}
-          <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2
-                          opacity-0 group-hover:opacity-100
-                          bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900
-                          text-xs font-semibold rounded px-2 py-1 pointer-events-none
-                          transition-opacity duration-300 whitespace-nowrap">
-            {theme === "dark" ? "Light Mode" : "Dark Mode"}
-          </span>
+                hover:after:w-full
+              "
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </a>
+          ))}
         </div>
 
+        {/* Right Controls */}
+        <div className="flex items-center gap-2">
+          
+          {/* Theme Toggle */}
+          <div className="relative group">
+            <button
+              onClick={() =>
+                setTheme(theme === "dark" ? "light" : "dark")
+              }
+              aria-label="Toggle Theme"
+              className="
+                p-2.5
+                rounded-xl
+                bg-white/5
+                hover:bg-yellow-500/20
+                transition-all
+                duration-300
+              "
+            >
+              {theme === "dark" ? (
+                <FaSun className="text-yellow-400 text-lg" />
+              ) : (
+                <FaMoon className="text-slate-700 text-lg" />
+              )}
+            </button>
 
+            <span
+              className="
+                absolute
+                top-full
+                mt-2
+                left-1/2
+                -translate-x-1/2
+                opacity-0
+                group-hover:opacity-100
+                pointer-events-none
+                transition-opacity
+                duration-300
+                whitespace-nowrap
+                text-xs
+                px-2
+                py-1
+                rounded-md
+                bg-gray-800
+                text-white
+                dark:bg-white
+                dark:text-gray-900
+              "
+            >
+              {theme === "dark"
+                ? "Light Mode"
+                : "Dark Mode"}
+            </span>
+          </div>
 
+          {/* Resume */}
+          <a
+            href="/Sainadha_Reddy_Resume.pdf"
+            download
+            className="
+              px-4
+              py-2
+              rounded-xl
+              bg-gradient-to-r
+              from-blue-600
+              to-indigo-600
+              text-white
+              text-sm
+              font-semibold
+              shadow-md
+              hover:shadow-lg
+              hover:scale-105
+              transition-all
+              duration-300
+            "
+          >
+            Resume
+          </a>
 
           {/* GitHub */}
           <a
@@ -61,9 +160,16 @@ export default function Nav() {
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="
+              p-2.5
+              rounded-xl
+              bg-white/5
+              hover:bg-blue-500/20
+              transition-all
+              duration-300
+            "
           >
-            <FaGithub className="text-gray-700 dark:text-gray-200 hover:text-yellow-400 dark:hover:text-yellow-300" />
+            <FaGithub className="text-lg text-gray-700 dark:text-gray-200" />
           </a>
 
           {/* LinkedIn */}
@@ -72,9 +178,16 @@ export default function Nav() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="
+              p-2.5
+              rounded-xl
+              bg-white/5
+              hover:bg-blue-500/20
+              transition-all
+              duration-300
+            "
           >
-            <FaLinkedin className="text-blue-600 dark:text-blue-400 hover:text-yellow-400 dark:hover:text-yellow-300" />
+            <FaLinkedin className="text-lg text-blue-600 dark:text-blue-400" />
           </a>
         </div>
       </div>

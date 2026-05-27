@@ -1,57 +1,132 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
+import { FaGraduationCap } from "react-icons/fa";
 
 const education = [
   {
-    degree: "B.Tech in Computer Science & Engineering",
+    degree: "B.Tech Computer Science & Engineering",
     institution: "JNTUH-UCESTH, Hyderabad",
-    details: "CGPA: 9.13 | Relevant Courses: AI, ML, Data Structures, Software Engineering",
+    score: "CGPA 9.13",
+    year: "2022 – 2026",
+    status: "Final Year",
   },
   {
-    degree: "Intermediate (12th)",
+    degree: "Intermediate (MPC)",
     institution: "Narayana Junior College, Hyderabad",
-    details: "Percentage: 97.8%",
+    score: "97.8%",
+    year: "2019 – 2021",
   },
   {
-    degree: "Schooling (10th)",
+    degree: "SSC (10th)",
     institution: "The Laurel High School, Karimnagar",
-    details: "CGPA: 10",
+    score: "CGPA 10.0",
+    year: "2019",
   },
 ];
 
 export default function Education() {
   return (
-    <section id="education" className="section">
+    <section
+      id="education"
+      // className="py-14 bg-gray-50 dark:bg-[#050F24]"
+    >
       <SectionTitle>Education</SectionTitle>
 
-      <div className="container relative border-l-2 border-blue-400 dark:border-blue-300 ml-4 pl-6">
-        {education.map((edu, index) => (
-          <motion.div
-            key={index}
-            className="mb-8 relative group"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-          >
-            {/* Circle marker */}
-            <span className="absolute -left-4 top-1 w-3 h-3 bg-blue-400 dark:bg-blue-300 rounded-full border-2 border-white dark:border-gray-900 group-hover:bg-blue-600 dark:group-hover:bg-blue-400 transition-colors duration-300"></span>
+      <div className="container mx-auto max-w-5xl px-6 mt-10">
+        <div className="relative border-l border-blue-500/30 ml-4">
+          {education.map((edu, index) => (
+            <motion.div
+              key={edu.degree}
+              initial={{ opacity: 0, x: -25 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.15 }}
+              className="relative mb-8 ml-8"
+            >
+              {/* Timeline Dot */}
+              <span
+                className="
+                  absolute
+                  -left-[37px]
+                  top-5
+                  w-3
+                  h-3
+                  rounded-full
+                  bg-blue-500
+                  border-4
+                  border-white
+                  dark:border-[#050F24]
+                "
+              />
 
-            <div className="bg-white dark:bg-gray-800 rounded-md p-4 shadow-md group-hover:shadow-xl group-hover:scale-[1.02] transition-all duration-300">
-              <h3 className="font-semibold text-lg sm:text-xl text-gray-900 dark:text-gray-100 group-hover:text-blue-500 dark:group-hover:text-blue-300 transition-colors duration-300">
-                {edu.degree}
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                {edu.institution}
-              </p>
-              <p className="text-gray-500 dark:text-gray-400 text-sm">{edu.period}</p>
-              <p className="mt-2 text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                {edu.details}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+              <div
+                className="
+                  bg-white
+                  dark:bg-gray-800
+                  rounded-2xl
+                  p-4
+                  shadow-lg
+                  hover:shadow-2xl
+                  hover:-translate-y-1
+                  transition-all
+                  duration-300
+                "
+              >
+                <div className="flex flex-wrap justify-between gap-3">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      <FaGraduationCap className="text-blue-500" />
+                      {edu.degree}
+                    </h3>
+
+                    <p className="mt-1 text-gray-600 dark:text-gray-300">
+                      {edu.institution}
+                    </p>
+                  </div>
+
+                  <div className="text-right">
+                    <span
+                      className="
+                        inline-block
+                        px-3 py-1
+                        rounded-full
+                        text-sm
+                        font-semibold
+                        bg-blue-500/15
+                        text-blue-500
+                      "
+                    >
+                      {edu.score}
+                    </span>
+
+                    {edu.status && (
+                      <div className="mt-2">
+                        <span
+                          className="
+                            inline-block
+                            px-3 py-1
+                            rounded-full
+                            text-xs
+                            font-medium
+                            bg-green-500/15
+                            text-green-500
+                          "
+                        >
+                          {edu.status}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                  {edu.year}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
