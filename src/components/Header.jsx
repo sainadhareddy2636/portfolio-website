@@ -76,7 +76,7 @@ export default function Header() {
             <div className="absolute inset-0 rounded-3xl bg-gray-300 dark:bg-gray-700 p-1 -z-10" />
             <div className="w-full h-full rounded-3xl overflow-hidden relative shadow-2xl transform transition-transform duration-500 group-hover:scale-105 group-hover:shadow-xl">
               <img
-                src="/Sainadha_Reddy_Profile_photo.jpg"
+                src="/SainadhaReddy.jpg"
                 alt="Busi Reddy"
                 className="w-full h-full object-cover rounded-3xl"
               />
