@@ -10,13 +10,13 @@ import {
 
 export default function Header() {
   return (
-    <header className="relative overflow-hidden bg-gray-50 dark:bg-[#050F24] text-gray-900 dark:text-gray-100">
+    <header id="home" className="relative overflow-hidden bg-gray-50 dark:bg-[#050F24] text-gray-900 dark:text-gray-100">
 
       {/* Background Blobs */}
       {/* <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full" /> */}
       {/* <div className="absolute bottom-10 right-20 w-96 h-96 bg-purple-500/10 blur-3xl rounded-full" /> */}
 
-      <div className="container relative mx-auto py-16 px-6 md:px-16 grid md:grid-cols-2 items-center gap-16">
+      <div className="max-w-7xl mx-auto py-16 px-6 lg:px-8 grid md:grid-cols-2 items-center gap-16">
 
         {/* LEFT CONTENT */}
         <motion.div
@@ -38,9 +38,16 @@ export default function Header() {
           </h1>
 
           {/* Main Title */}
-          <h2 className="mt-5 text-lg md:text-2xl font-semibold text-gray-700 dark:text-gray-200">
-            Full-Stack Developer | Java • MERN Stack • AI Applications
-          </h2>
+          <h2 className="
+mt-5
+text-2xl md:text-3xl
+italic
+font-light
+text-gray-300
+leading-tight
+">
+  Full-Stack Developer • Java <br></br>• MERN Stack • AI Applications
+</h2>
 
           {/* Achievement Chips */}
           <div className="flex flex-wrap gap-3 mt-6">
@@ -73,7 +80,7 @@ export default function Header() {
 
 
           {/* Buttons */}
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
 
             <a
               href="/Sainadha_Reddy_Resume.pdf"

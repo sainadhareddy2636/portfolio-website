@@ -11,14 +11,24 @@ export default function Nav() {
     "skills",
     "projects",
     "achievements",
-    ,
     "contact",
   ];
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#050F24]/80 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+    <nav
+      className="
+        sticky top-0 z-50
+        backdrop-blur-md
+        bg-white/80
+        dark:bg-[#050F24]/80
+        border-b
+        border-gray-200
+        dark:border-gray-800
+        shadow-sm
+      "
+    >
       <div className="max-w-7xl mx-auto h-14 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        
+
         {/* Logo */}
         <a
           href="#home"
@@ -31,16 +41,17 @@ export default function Nav() {
             bg-clip-text
             text-transparent
             hover:scale-105
-            transition-transform
+            transition-all
             duration-300
             whitespace-nowrap
+            cursor-pointer
           "
         >
           Sainadha Reddy
         </a>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-5 font-semibold">
+        <div className="hidden md:flex items-center gap-6 font-semibold">
           {links.map((section) => (
             <a
               key={section}
@@ -77,7 +88,7 @@ export default function Nav() {
 
         {/* Right Controls */}
         <div className="flex items-center gap-2">
-          
+
           {/* Theme Toggle */}
           <div className="relative group">
             <button
@@ -130,11 +141,13 @@ export default function Nav() {
             </span>
           </div>
 
-          {/* Resume */}
+          {/* Resume Button */}
           <a
             href="/Sainadha_Reddy_Resume.pdf"
             download
             className="
+              hidden sm:flex
+              items-center
               px-4
               py-2
               rounded-xl
