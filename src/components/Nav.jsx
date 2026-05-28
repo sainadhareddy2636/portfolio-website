@@ -93,7 +93,7 @@ export default function Nav() {
           <div className="relative group">
             <button
               onClick={() =>
-                setTheme(theme === "dark" ? "light" : "dark")
+                setTheme(theme === "light" ? "light" : "dark")
               }
               aria-label="Toggle Theme"
               className="

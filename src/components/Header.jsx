@@ -38,14 +38,17 @@ export default function Header() {
           </h1>
 
           {/* Main Title */}
-          <h2 className="
-mt-5
-text-2xl md:text-3xl
-italic
-font-light
-text-gray-300
-leading-tight
-">
+          <h2
+  className="
+    mt-5
+    text-2xl md:text-3xl
+    italic
+    font-light
+    text-gray-500
+    dark:text-gray-300
+    leading-tight
+  "
+>
   Full-Stack Developer • Java <br></br>• MERN Stack • AI Applications
 </h2>
 
